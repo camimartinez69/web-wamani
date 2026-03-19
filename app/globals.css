@@ -1,0 +1,158 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Wamani Brand Colors */
+  --sand: #E5D9C3;
+  --bone: #F5F0E8;
+  --sage: #6B705C;
+  --ochre: #B08968;
+  --copper: #BC6C25;
+  --carbon: #2B2D42;
+
+  /* Semantic tokens mapped to brand */
+  --background: var(--sand);
+  --foreground: var(--carbon);
+  --card: var(--bone);
+  --card-foreground: var(--carbon);
+  --popover: var(--bone);
+  --popover-foreground: var(--carbon);
+  --primary: var(--copper);
+  --primary-foreground: var(--sand);
+  --secondary: var(--sage);
+  --secondary-foreground: var(--sand);
+  --muted: var(--bone);
+  --muted-foreground: var(--sage);
+  --accent: var(--ochre);
+  --accent-foreground: var(--sand);
+  --destructive: #dc2626;
+  --destructive-foreground: var(--sand);
+  --border: rgba(43, 45, 66, 0.1);
+  --input: rgba(43, 45, 66, 0.1);
+  --ring: var(--copper);
+  --chart-1: var(--copper);
+  --chart-2: var(--sage);
+  --chart-3: var(--ochre);
+  --chart-4: var(--carbon);
+  --chart-5: var(--sand);
+  --radius: 0.5rem;
+  --sidebar: var(--bone);
+  --sidebar-foreground: var(--carbon);
+  --sidebar-primary: var(--copper);
+  --sidebar-primary-foreground: var(--sand);
+  --sidebar-accent: var(--sage);
+  --sidebar-accent-foreground: var(--sand);
+  --sidebar-border: rgba(43, 45, 66, 0.1);
+  --sidebar-ring: var(--copper);
+}
+
+/* Dark mode uses same brand colors - Wamani is a light-themed site */
+.dark {
+  --background: var(--carbon);
+  --foreground: var(--sand);
+  --card: var(--carbon);
+  --card-foreground: var(--sand);
+  --popover: var(--carbon);
+  --popover-foreground: var(--sand);
+  --primary: var(--copper);
+  --primary-foreground: var(--sand);
+  --secondary: var(--sage);
+  --secondary-foreground: var(--sand);
+  --muted: rgba(229, 217, 195, 0.1);
+  --muted-foreground: rgba(229, 217, 195, 0.7);
+  --accent: var(--ochre);
+  --accent-foreground: var(--sand);
+  --destructive: #dc2626;
+  --destructive-foreground: var(--sand);
+  --border: rgba(229, 217, 195, 0.1);
+  --input: rgba(229, 217, 195, 0.1);
+  --ring: var(--copper);
+  --sidebar: var(--carbon);
+  --sidebar-foreground: var(--sand);
+  --sidebar-primary: var(--copper);
+  --sidebar-primary-foreground: var(--sand);
+  --sidebar-accent: var(--sage);
+  --sidebar-accent-foreground: var(--sand);
+  --sidebar-border: rgba(229, 217, 195, 0.1);
+  --sidebar-ring: var(--copper);
+}
+
+@theme inline {
+  --font-sans: 'Inter', 'Inter Fallback', sans-serif;
+  --font-serif: 'DM Serif Display', 'Georgia', serif;
+  --font-mono: 'Geist Mono', 'Geist Mono Fallback', monospace;
+  
+  /* Wamani Brand Colors */
+  --color-sand: var(--sand);
+  --color-bone: var(--bone);
+  --color-sage: var(--sage);
+  --color-ochre: var(--ochre);
+  --color-copper: var(--copper);
+  --color-carbon: var(--carbon);
+  
+  /* Semantic Colors */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-sand text-carbon;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Custom animation durations */
+.duration-2000 {
+  transition-duration: 2000ms;
+}
+
+/* Mobile-first refinements for compact, balanced mobile layouts */
+@media (max-width: 767px) {
+  /* Tighter section spacing on mobile */
+  .section-spacing {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+}
