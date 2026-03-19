@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useMemo, useState } from "react"
+import { Suspense, useEffect, useMemo, useState } from "react"
 import Image from "next/image"
 import { PortableText } from "@portabletext/react"
 import { useRouter, useSearchParams } from "next/navigation"
@@ -592,7 +592,9 @@ function ConservacionPageContent() {
 export default function ConservacionPage() {
   return (
     <LanguageProvider>
-      <ConservacionPageContent />
+      <Suspense fallback={<div className="min-h-screen bg-sand" />}>
+        <ConservacionPageContent />
+      </Suspense>
     </LanguageProvider>
   )
 }
