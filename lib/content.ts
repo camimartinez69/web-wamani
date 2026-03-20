@@ -266,18 +266,18 @@ export const content = {
     },
     en: {
       title: "Wamani",
-      subtitle: "A remote field and mountain destination",
+      subtitle: "A remote countryside and mountain destination",
       intro:
-        "Wamani is a remote field and mountain destination in San Carlos, Mendoza, southwest of Pareditas. Across its 32,000 hectares of campo, foothills, and mountain, where human intervention remains minimal, Wamani offers an uncommon scale: space, distance, and a slower way of inhabiting the landscape.",
+        "Wamani is a remote countryside and mountain destination in San Carlos, Mendoza, southwest of Pareditas. Across its 32,000 hectares (about 79,000 acres) of open country, foothills, and mountain, where human intervention remains minimal, Wamani offers an uncommon scale: space, distance, and a slower way to experience the landscape.",
       description:
-        "It is a place to pause, explore, do adventure tourism, travel internal roads, live the culture of the countryside, and inhabit Mendoza differently. Plains and mountain. Authentic hospitality. A different way of traveling.",
+        "It is a place to pause, explore, seek outdoor adventure, wander through the property's internal trails, experience countryside culture, and experience Mendoza differently. Plains and mountains. Authentic hospitality. A different way of traveling.",
       features: [
         "Silence and space",
-        "Adventure tourism",
-        "Field culture",
-        "Plains and mountain",
+        "Outdoor adventure",
+        "Country life",
+        "Plains and mountains",
         "Authentic hospitality",
-        "Internal roads",
+        "Back roads",
       ],
     },
   },
@@ -300,14 +300,14 @@ export const content = {
     en: {
       title: "What Wamani means",
       short:
-        "Wamani is a word from the Andean world. In Quechua it can mean territory or province, but its deeper meaning is something else: the protective spirit of the mountain. The name honors Pico Wamani, which reaches 5,000 meters and rises within the property as a real presence in the landscape.",
+        "Wamani is a word from the Andean world. In Quechua it can mean territory or province, but its deeper meaning is something else: the protective spirit of the mountain. The name honors Wamani Peak, which reaches 5,000 meters and rises within the property as a real presence in the landscape.",
       long: {
         title: "The spirit of the mountain",
         paragraphs: [
           "In the Andean worldview, Wamani is not just a word. It is the presence that dwells on the peaks, the silent guardian that watches from the heights, the spirit that cares for those who walk its slopes.",
-          "It is belonging. It is memory. It is the thread that connects those who travel the land with those who inhabited it before, with those who cared for it and named it.",
-          "Cerro Wamani rises at the heart of this property like an anchor, like a reminder that there are places where the landscape still has a voice, where the mountain still means something.",
-          "We chose this name because we believe some territories deserve to be inhabited with respect, with pause, with the awareness that we are visitors in a story much longer than our own. To come to Wamani is to enter that story.",
+          "It is belonging. It is memory. It is the thread that connects those who travel the land with those who lived here before, with those who cared for it and named it.",
+          "A wamani hill stands at the heart of the property like an anchor, like a reminder that there are places where the landscape still has a voice, where the mountain still means something.",
+          "We chose this name because we believe some territories deserve to be lived in with respect, with pause, with the awareness that we are visitors in a story much longer than our own. To come to Wamani is to enter that story.",
         ],
       },
     },
@@ -795,7 +795,7 @@ export const content = {
           name: "Mountain expeditions",
           description: "For those who want to go further.",
           fullDescription:
-            "For those seeking a more demanding and adventurous experience, Wamani can also open the door to more intense mountain outings: camps, crossings, or expeditions planned according to weather, terrain, and the group's level. One possibility is coordinating an expedition to Pico Wamani, which reaches 5,000 meters.\n\nThese experiences require planning and prior coordination, and are more closely tied to exploration, effort, and staying in the landscape than to a one-off activity.\n\nIt is Wamani's most remote and demanding version: less comfort, more territory, more mountain, and a stronger feeling of truly being inside the place.",
+            "For those seeking a more demanding and adventurous experience, Wamani can also open the door to more intense mountain outings: camps, crossings, or expeditions planned according to weather, terrain, and the group's level. One possibility is coordinating an expedition to Wamani Peak, which reaches 5,000 meters.\n\nThese experiences require planning and prior coordination, and are more closely tied to exploration, effort, and staying in the landscape than to a one-off activity.\n\nIt is Wamani's most remote and demanding version: less comfort, more territory, more mountain, and a stronger feeling of truly being inside the place.",
           image: "/images/experiencias/expediciones.jpg",
           images: ["/images/experiencias/expediciones.jpg"],
         },
