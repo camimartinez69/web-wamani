@@ -1,6 +1,5 @@
 import type { Metadata, Viewport } from 'next'
 import { Inter, DM_Serif_Display } from 'next/font/google'
-import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
 const inter = Inter({
@@ -17,22 +16,38 @@ const dmSerif = DM_Serif_Display({
 })
 
 export const metadata: Metadata = {
-  title: 'Wamani | Campo y Montaña en Mendoza',
+  title: 'Wamani | Experiencia de campo en Mendoza',
   description:
-    'Una experiencia de campo y montaña en el sudoeste mendocino: espacio, silencio y una forma distinta de habitar el paisaje.',
-  keywords: ['Wamani', 'Mendoza', 'Argentina', 'turismo', 'campo', 'montaña', 'aventura', 'naturaleza'],
+    'Viví una experiencia única en el Valle de Uco, Mendoza. Naturaleza, montaña y desconexión total en Wamani.',
+
+  keywords: [
+    'Wamani',
+    'Mendoza',
+    'Valle de Uco',
+    'Argentina',
+    'turismo',
+    'campo',
+    'montaña',
+    'experiencia',
+    'naturaleza',
+  ],
+
   authors: [{ name: 'Wamani' }],
+
   formatDetection: {
     telephone: false,
     email: false,
     address: false,
   },
+
   openGraph: {
-    title: 'Wamani | Campo y Montaña en Mendoza',
+    title: 'Wamani | Experiencia de campo en Mendoza',
     description:
-      'Una experiencia de campo y montaña en el sudoeste mendocino: espacio, silencio y una forma distinta de habitar el paisaje.',
+      'Viví una experiencia única en el Valle de Uco, Mendoza. Naturaleza, montaña y desconexión total en Wamani.',
     type: 'website',
     locale: 'es_AR',
+    url: 'https://wamani.net',
+    siteName: 'Wamani',
   },
 }
 
@@ -44,9 +59,9 @@ export const viewport: Viewport = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode
-}>) {
+}) {
   return (
     <html
       lang="es"
