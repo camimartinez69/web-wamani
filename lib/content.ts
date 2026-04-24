@@ -439,7 +439,7 @@ export const content = {
           name: "Domos El Selerpe",
           description: "Entre cerros, agua y silencio andino.",
           fullDescription:
-            "A unos 25 km al noroeste del Casco Principal, este conjunto de 5 estructuras ofrece una experiencia más inmersa en la montaña. Incluye 4 domos dormitorio con cama y baño, y un domo principal central con cocina, comedor y sala de estar. Un entorno de cerros, vegas, agua cercana y una escala más panorámica del paisaje.",
+            "A unos 25 km al noroeste del Casco Principal, este conjunto de 5 estructuras ofrece una experiencia inmersiva en la montaña. Incluye 4 domos dormitorio con cama y baño, y un domo principal central con cocina, comedor y sala de estar. Un entorno de cerros, vegas, agua cercana y una escala más panorámica del paisaje.",
           atmosphere: "Inmerso en montaña",
           stayType: "Refugio apartado",
           features: [
