@@ -14,18 +14,23 @@ export function WelcomePopup() {
   useEffect(() => {
     setMounted(true)
 
-    const dismissed = window.sessionStorage.getItem("wamani-welcome-popup-dismissed")
+    const hasSeen =
+      window.sessionStorage.getItem("wamani-welcome-popup-seen") ||
+      window.sessionStorage.getItem("wamani-welcome-popup-dismissed")
 
-    if (!dismissed) {
-      const timer = setTimeout(() => {
-        setIsOpen(true)
-      }, 400)
+    if (hasSeen) return
 
-      return () => clearTimeout(timer)
-    }
+    window.sessionStorage.setItem("wamani-welcome-popup-seen", "true")
+
+    const timer = setTimeout(() => {
+      setIsOpen(true)
+    }, 400)
+
+    return () => clearTimeout(timer)
   }, [])
 
   const handleClose = () => {
+    window.sessionStorage.setItem("wamani-welcome-popup-seen", "true")
     window.sessionStorage.setItem("wamani-welcome-popup-dismissed", "true")
     setIsOpen(false)
   }
